@@ -102,23 +102,7 @@
             font-size: 18px;
         }
     }
-    #photoButton {
-    margin-top: 10px;
-}
-
-#photoContainer {
-    display: none;
-    opacity: 0;
-    transition: opacity 1.5s ease;
-}
-
-.photo {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    margin: 40px auto 0;
-    border-radius: 12px;
-}
+    
 </style>
 
 <body>
@@ -202,14 +186,6 @@
     Я научилась делать кнопки. А вот отпустить тебя пока не научилась.
 </p>
 
-<button id="photoButton" onclick="showPhoto()">
-    Ещё кое-что
-</button>
-
-<div id="photoContainer">
-    <img src="photo.jpg" class="photo">
-</div>
-
 </div>
 
 
@@ -231,17 +207,7 @@ function showMessage() {
         message.style.opacity = "1";
     }, 50);
 }
-function showPhoto() {
-    const photo = document.getElementById("photoContainer");
-    const button = document.getElementById("photoButton");
 
-    button.style.display = "none";
-    photo.style.display = "block";
-
-    setTimeout(function() {
-        photo.style.opacity = "1";
-    }, 50);
-}
 </script>
 
 </body>
