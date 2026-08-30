@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Для Олега</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #111111;
+        color: #f5f5f5;
+        font-family: Georgia, "Times New Roman", serif;
+        text-align: center;
+        margin: 0;
+        min-height: 100vh;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 700px;
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 34px;
+        font-weight: 400;
+        margin-bottom: 18px;
+        letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+        color: #999999;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        background: transparent;
+        color: #f5f5f5;
+        border: 1px solid #666666;
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+
+    button:hover {
+        background: #f5f5f5;
+        color: #111111;
+        transform: scale(1.04);
+    }
+
+    #message {
+        display: none;
+        max-width: 620px;
+        margin: 0 auto;
+        text-align: left;
+        line-height: 1.85;
+        font-size: 17px;
+        opacity: 0;
+        transition: opacity 1.8s ease;
+    }
+
+    #message p {
+        margin: 0 0 27px 0;
+    }
+
+    .final {
+        text-align: center;
+        margin-top: 50px !important;
+        line-height: 1.6 !important;
+        font-size: 20px;
+    }
+
+    @media (max-width: 600px) {
+
+        body {
+            align-items: flex-start;
+            padding-top: 80px;
+        }
+
+        h1 {
+            font-size: 27px;
+        }
+
+        #message {
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        .final {
+            font-size: 18px;
+        }
+    }
+</style>
+
+<body>
+<div class="container">
+
+<h1>Я научилась делать кнопки</h1>
+
+<p class="subtitle">
+    не без помощи GPT, но все таки с твоей подачи)
+</p>
+
+<button onclick="showMessage()">
+    Нажми меня
+</button>
+
+<div id="message">
+
+    <p>Олег, привет)</p>
+
+    <p>
+        Ты ведь недавно показывал мне, что так можно, и я очень хотела
+        однажды сделать тебе ответное послание. Поэтому я решила сделать
+        это сейчас, хоть и немного поздно.
+    </p>
+
+    <p>
+        Я не справляюсь с тем, что произошло.
+    </p>
+
+    <p>
+        Сегодня утром я проснулась и моей первой мыслью было
+        «Хоть бы это все был просто плохой сон».
+    </p>
+
+    <p>
+        Я перечитываю наши старые сообщения, смотрю на моменты,
+        когда все еще было хорошо и от этого становится одновременно
+        тепло и невыносимо больно. И мне очень сложно просто взять
+        и принять, что теперь этого больше нет.
+        Самое странное для меня - я до сих пор не понимаю,
+        как то, что еще совсем недавно казалось таким реальным,
+        могло закончиться так быстро.
+    </p>
+
+    <p>
+        Помнишь я рассказывала тебе, что мы ездили на звездопад Персеиды?
+        Точнее, на падение маленьких, сгорающих кусочков метеоров))
+        Каждый раз я загадывала тебя. Загадывала быть с тобой.
+        Ты наверняка скептически к такому относишься, я теперь тоже.
+    </p>
+
+    <p>
+        Ты говорил, что такие люди как мы притягиваются друг к другу
+        как магниты, и что кажется, будто «он тот самый».
+        Я тоже тогда почувствовала, что между нами есть что-то такое редкое, 
+        я прежде не испытывала таких чувств.
+    </p>
+
+    <p>
+        Я очень тебя люблю. И сейчас я не знаю, как просто взять
+        и перестать хотеть тебя в своей жизни.
+    </p>
+
+    <p>
+        Наверное я еще долго буду скучать. И наверное я еще долго буду
+        свыкаться с мыслью, что человек, с которым совсем недавно я
+        представляла своё будущее, теперь не является его частью.
+    </p>
+
+    <p>
+        Я понимаю, что у тебя есть свои причины и своё решение.
+        Мне просто хотелось, чтобы ты знал. Мне слишком тяжело
+        держать это в себе.
+    </p>
+
+    <p class="final">
+    Но хотя бы одну вещь я всё-таки сделала благодаря тебе))
+    <br><br>
+                                🧡
+    <br><br>     
+    Я научилась делать кнопки. А вот отпустить тебя пока не научилась.
+</p>
+
+</div>
+
+
+<script>
+function showMessage() {
+
+    const message = document.getElementById("message");
+    const button = document.querySelector("button");
+    const subtitle = document.querySelector(".subtitle");
+    const title = document.querySelector("h1");
+
+    button.style.display = "none";
+    subtitle.style.display = "none";
+    title.style.display = "none";
+
+    message.style.display = "block";
+
+    setTimeout(function() {
+        message.style.opacity = "1";
+    }, 50);
+}
+</script>
+
+</body>
